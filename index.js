@@ -1,14 +1,15 @@
-let a = 2000
-let b = 100
-
-const divide = function(a, b) {
-    return a/b;
+// function expression
+const divide = function(a, b){
+    return a / b;
 }
-const square = (x) => x * x;
+//arrow function
+const square = (x) => x*x;
 
-let x = 2
+//arrow function
 const add = (a, b) => a + b;
 
-console.log(divide(a, b));
-console.log(square(x));
-console.log(add(a, b));
+module.exports = {
+    divide,
+    square,
+    add,
+};
